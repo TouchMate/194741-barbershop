@@ -1,7 +1,7 @@
 # Учебный проект «Барбершоп»
 
 * Студент: [Sakaev Alexander](https://up.htmlacademy.ru/htmlcss/14/user/194741).
-
+* Наставник: [Лиза Позднякова](https://htmlacademy.ru/profile/id5608).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
