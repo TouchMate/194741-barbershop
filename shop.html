@@ -7,11 +7,9 @@
   <body>
 <header class="main-header">
 	 <div class="container">
-	 	<div class="side-logo">
+	 	<a class="side-logo">
 	 	 <img src="img/side-logo.png" width="111" height="24" alt="Барбершоп">
-	 	</div>
-	 </div>
-	<div class="container">
+	 	</a>
 		<nav class="shop-navigation">
           <ul>
             <li>
@@ -37,12 +35,9 @@
 	</div>
 </header>
 <main class="container">
-   <article class="shop page">
-    <div class="index-content">
+    <section class="page-title shop">
       	<h1 class="index-content-title">Средства для ухода</h1>
-    </div>
-    <nav class="breadcrumbs">
-        <ul>
+    	<ul class="breadcrumbs">
             <li>
               <a href="#">Гланая</a>
             </li>
@@ -50,12 +45,12 @@
               <a href="#">Магазин</a>
             </li>
             <li>
-              <a>Средства для ухода</a><!--href is not mentioned as it is an active page--->
+              Средства для ухода
             </li>
           </ul>
-     </nav>
+     </section>
      	<article class="container">
-     	<section class="search-production">
+     	<section class="search">
      		<form action="#" method="get">
      			<fieldset><!--The border will be removed in the css like fieldset {border: none;}-->
 					<legend>Производители&#58;</legend>
@@ -72,10 +67,6 @@
 					<label>American Crew</label>
 					<input type="checkbox" name="American Crew" value="production-American-Crew" checked>
      			</fieldset>
-     		</form>
-     	</section>
-     	<section class="search-groups">
-     		<form action="#" method="get">
      			<fieldset><!--The border will be removed in the css like fieldset {border: none;}-->  
 					<legend>Группы товаров&#58;</legend>
 					<label>Бритвенные <br>
@@ -86,111 +77,115 @@
 					<label>Аксессуары</label>
 					<input type="radio" name="Accessories" value="accessories-group">
 				</fieldset>
+				<a>
+				<button type="button" class="btn search">Показать</button>
+				</a>
 			</form>
-    		<button type="button" class="btn search">Показать</button>
-     	</section>
+    	</section>
         <article class="shop-item">
         	<div class="item-image">
+        	<a href="#">
         		<img src="img/bayter-of-california-1.png" width="220" height="165" alt="">
-        		<p>Набор для путешествий
-        		&laquo;BAXTER OF CALIFORNIA&raquo;</p>
-        		<div class="order-container">
-					<span class="order-price">
-						2 900 руб.
-					</span>
-					<span class="order-btn">
-						<a  class="btn" href="#">Купить</a>
-					</span>
-			  	</div>
+        	</a>	
+        		
+        	<p><a href="#">Набор для путешествий
+        		&laquo;BAXTER OF CALIFORNIA&raquo;</a></p>
+        	
+  			<div class="order-container">
+				<div class="order-price">
+					<span>2 900 руб.</span>
+					<a href="#">Купить</a>
+				</div>
+      		</div>
         	</div>
         </article>
           <article class="shop-item">
         	<div class="item-image">
-        		<img src="img/bayter-conditioner.png" width="220" height="165" alt="">
-        	</div>
-        		<p>Увлажняющий кондиционер
-        		&laquo;BAXTER OF CALIFORNIA&raquo;</p>
+        	    <a href="#">
+        		 <img src="img/bayter-conditioner.png" width="220" height="165" alt="">
+        		</a>
+        	<p><a href="#">Увлажняющий кондиционер
+        		&laquo;BAXTER OF CALIFORNIA&raquo;</a></p>
         		<div class="order-container">
 					<span class="order-price">
 						750 руб.
 					</span>
-					<span class="order-btn">
-						<a href="#" >Купить</a>
-					</span>
+					<a href="#" >Купить</a>
+			  	</div>
 			  	</div>
 			</article>
        	<article class="shop-item">
         	<div class="item-image">
+        	 <a href="#">
         		<img src="img/bayter-gel.png" width="220" height="165" alt="">
+			</a>
         		<p>Гель для волос
         		&laquo;BAXTER OF CALIFORNIA&raquo;</p>
         		<div class="order-container">
 					<span class="order-price">
 						290 руб.
 					</span>
-					<span class="order-btn">
 						<a href="#">Купить</a>
-					</span>
 			  	</div>
         	</div>
 			  </article>	
         <article class="shop-item">
         	<div class="item-image">
+        	<a href="#">
         		<img src="img/american-molding.png" width="220" height="165" alt="">
+        	</a>	
         		<p>Глина для укладки волос
         		&laquo;AMERICAN CREW&raquo;</p>
         		<div class="order-container">
 					<span class="order-price">
 						500 руб.
 					</span>
-					<span class="order-btn">
 						<a href="#">Купить</a>
-					</span>
-			  	</div>
+					</div>
         	</div>
         </article>
         <article class="shop-item">
         	<div class="item-image">
+        	<a href="#">
         		<img src="img/american-gel.png" width="220" height="165" alt="">
+        	</a>	
         		<p>Гель для волос
         		&laquo;AMERICAN CREW&raquo;</p>
         		<div class="order-container">
 					<span class="order-price">
 						300 руб.
 					</span>
-					<span class="order-btn">
-						<a href="#">Купить</a>
-					</span>
-			  	</div>
+						<a class="order-btn" href="#">Купить</a>
+				</div>
         	</div>
         </article>
-	   </article>
-	</article>						
-     	
-       	<article class="shop-item">
+	   <article class="shop-item">
         	<div class="item-image">
+        	<a href="#">
         		<img src="img/baxter-shave.png" width="220" height="165" alt="">
+        	</a>
         		<p>Набор для бритья
         		&laquo;BAXTER OF CALIFORNIA&raquo;</p>
         		<div class="order-container">
 					<span class="order-price">
 						3 900 руб.
 					</span>
-					<span class="order-btn">
-						<a href="#">Купить</a>
-					</span>
+						<a class="order-btn" href="#">Купить</a>	
         	</div>
         	</div> 
-        </article >
+        </article>
         <article>						
      	<section class="btn-page">
      		<div class="btn-page container">
-     			<a class="btn" href="#">1</a>
-     			<a class="btn" href="#">2</a>
-     			<a class="btn" href="#">3</a>
-     			<a class="btn" href="#">4</a>
+     		<ul>
+     			<li><a class="btn" href="#">1</a></li>
+     			<li><a class="btn" href="#">2</a></li>
+     			<li><a class="btn" href="#">3</a></li>
+     			<li><a class="btn" href="#">4</a></li>
+     		</ul>	
      		</div>
      	</section>
+     	</article>
      	</article>
       </main>
          <footer class="main-footer">
