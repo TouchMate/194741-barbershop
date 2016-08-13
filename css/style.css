@@ -1,13 +1,126 @@
 body {
-	font-family: "PT Sans Narrow","Arial" sans-serif;
+	min-width: 1122px;
+	min-height: 1750px;
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans Narrow", "Arial" sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: bold;
 	color: #000000;
-	}
-h1{
+}
+
+h1 {
 	font-size: 30px;
 }
-h2{
+
+h2 {
 	font-size: 24px;
+}
+
+.shop-item h2 {
+	font-size: 14px;
+}
+
+
+/*
+=================================================================================
+-----------------------------------LAYOUT----------------------------------------
+=================================================================================
+*/
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.shop-navigation {
+	width: 780px;
+	float: left;
+}
+
+.user-block {
+	float: right;
+	width: 70px;
+}
+
+.main-header {
+	margin-bottom: 50px;
+}
+
+.page-title.item {
+	margin-bottom: 50px;
+}
+
+.main-footer {
+	margin-top: 50px;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.footer-contacts {
+	float: left;
+	width: 320px;
+	margin-right: 60px;
+}
+
+.footer-social {
+	float: left;
+	width: 180px;
+}
+
+.footer-copyright {
+	float: right;
+	width: 180px;
+}
+
+.colum-left {
+	float: left;
+	width: 460px;
+}
+
+.colum-rigth {
+	float: right;
+	width: 390px;
+}
+
+.travel-kit {
+	margin-bottom: 40px;
+}
+
+.order-container {
+	margin-bottom: 65px;
+}
+
+.search {
+	float: left;
+	width: 220px;
+	min-height: 575px;
+}
+
+.btn-page {
+	margin: 0 auto;
+}
+
+.shop-item-catalog {
+	float: right;
+	width: 700px;
+}
+
+.shop-item {
+	float: left;
+	width: 220px;
+	max-height: 290px;
+	margin-right: 18px;
+}
+
+.shop-item:nth-child(3n) {
+	margin-right: 0px;
 }
