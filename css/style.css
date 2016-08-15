@@ -44,11 +44,13 @@ h2 {
 .shop-navigation {
 	width: 780px;
 	float: left;
+	min-height: 70px;
 }
 
 .user-block {
 	float: right;
-	width: 70px;
+	width: 140px;
+	padding: 0px;
 }
 
 .main-header {
@@ -57,6 +59,8 @@ h2 {
 
 .page-title.item {
 	margin-bottom: 50px;
+	float: left;
+	width: 621px;
 }
 
 .main-footer {
@@ -105,10 +109,6 @@ h2 {
 	min-height: 575px;
 }
 
-.btn-page {
-	margin: 0 auto;
-}
-
 .shop-item-catalog {
 	float: right;
 	width: 700px;
@@ -124,3 +124,99 @@ h2 {
 .shop-item:nth-child(3n) {
 	margin-right: 0px;
 }
+
+.logo {
+	float: left;
+	margin-right: 35px;
+}
+
+.shop-navigation-menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.shop-navigation-menu li {
+	float: left;
+	margin-right: 30px;
+}
+
+.breadcrums li {
+	float: left;
+	margin-right: 14px;
+}
+
+.breadcrums {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.item-info-additional-title {
+	margin-bottom: 40px;
+}
+
+.breadcrums {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.promo-title {
+	display: block;
+	clear: both;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.price-content {
+	float: left;
+	width: 240px;
+}
+
+.price-content-table {
+	float: right;
+	width: 460px;
+}
+
+.price-content-about {
+	clear: both;
+}
+
+.about-left {
+	float: left;
+	width: 380px;
+}
+
+.about-right {
+	float: right;
+	width: 380px;
+}
+
+.features-photo img:nth-child(2),
+.features-photo img:nth-child(3) {
+	margin-right: 20px;
+}
+
+.features-photo img {
+	float: left;
+}
+
+.features-photo img:nth-child(1) {
+	margin-bottom: 20px;
+}
+
+.btn-page-list {
+	list-style: none;
+	margin-left: 0px;
+	padding: 0px;
+	padding-top:45px; 
+}
+
+.btn-page-list li {
+	display: block;
+	float: left;
+	margin-right: 8px;
+}
+
