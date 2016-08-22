@@ -9,13 +9,13 @@
 </head>
 
 <body>
-	<header class="main-header">
+	<header class="main-header shop">
 		<div class="container clearfix">
+			<a href="index.html">
+				<img class="logo" src="img/logo.png" width="111" height="24" alt="Барбершоп">
+			</a>
 			<nav class="shop-navigation">
-				<a class="logo" href="index.html">
-					<img src="img/Logo.png" width="111" height="24" alt="Барбершоп">
-				</a>
-				<ul class="shop-navigation-menu">
+				<ul class="shop-navigation-menu cleafix">
 					<li>
 						<a href="#">Информация</a>
 					</li>
@@ -43,7 +43,7 @@
 
 			<section class="page-title shop clearfix">
 				<h1 class="index-content-title">Средства для ухода</h1>
-				<ul class="breadcrums">
+				<ul class="breadcrumbs shop">
 					<li>
 						<a href="#">Гланая</a>
 					</li>
@@ -55,36 +55,50 @@
 					</li>
 				</ul>
 			</section>
-			<!--		не получается опустить-->
+
 			<div class="shop-search clearfix">
 				<section class="search clearfix">
 					<form action="#" method="get">
 						<fieldset>
 							<legend>Производители&#58;</legend>
-							<label>Baxter of California</label>
-							<input type="checkbox" name="Baxter-of-California" value="production-Baxter-of-California" checked>
-							<label>Mr Natty</label>
-							<input type="checkbox" name="Mr-Natty" value="production-Mr-Natty">
-							<label>Suavecito</label>
-							<input type="checkbox" name="Suavecito" value="production-Suavecito" checked>
-							<label>Malin&#43;Goetz</label>
-							<input type="checkbox" name="Malin+Goetz" value="production-Malin+Goetz">
-							<label>Murray&#39;s</label>
-							<input type="checkbox" name="Murrays" value="production-Murrays">
-							<label>American Crew</label>
-							<input type="checkbox" name="American Crew" value="production-American-Crew" checked>
+
+							<input type="checkbox" name="Baxter-of-California" value="production-Baxter-of-California" checked id="baxter">
+							<label for="baxter">Baxter of California</label>
+
+							<input type="checkbox" name="Mr-Natty" value="production-Mr-Natty" id="natty">
+							<label for="natty">Mr Natty</label>
+
+							<input type="checkbox" name="Suavecito" value="production-Suavecito" checked id="suavecito">
+							<label for="suavecito">Suavecito
+							</label>
+
+							<input type="checkbox" name="Malin+Goetz" value="production-Malin+Goetz" id="malin">
+							<label for="malin"> Malin&#43;Goetz
+							</label>
+
+							<input type="checkbox" name="Murrays" value="production-Murrays" id="murray">
+							<label for="murrays"> Murray&#39;s
+							</label>
+
+							<input type="checkbox" name="American Crew" value="production-American-Crew" id="american" checked>
+							<label for="american">American Crew
+							</label>
 						</fieldset>
 						<fieldset>
 							<legend>Группы товаров&#58;</legend>
-							<label>Бритвенные принадлежности
+
+							<input type="radio" name="Shaving-items" value="shaving-group" id="shaving">
+							<label for="shaving">Бритвенные принадлежности
 							</label>
-							<input type="radio" name="Shaving-items" value="shaving-group">
-							<label>Средства для ухода</label>
-							<input type="radio" checked name="Care-item" value="care-group">
-							<label>Аксессуары</label>
-							<input type="radio" name="Accessories" value="accessories-group">
+							<input type="radio" checked name="Care-item" value="care-group" id="care">
+							<label for="care">Средства для ухода
+							</label>
+
+							<input type="radio" name="Accessories" value="accessories-group" id="accessories">
+							<label for="accessories">Аксессуары
+							</label>
 						</fieldset>
-						<button type="submit" class="btn search">Показать</button>
+						<button type="submit" class="btn btn-search">Показать</button>
 
 					</form>
 				</section>
@@ -95,28 +109,32 @@
 								<img src="img/bayter-of-california-shop.jpg" width="220" height="165" alt="">
 							</a>
 						</div>
-
-						<h2><a><span class="category">Набор для путешествий</span>
-        		<span class="product-brand">&laquo;BAXTER OF CALIFORNIA&raquo;</span></a></h2>
 						<div class="order-container">
+							<h2><a href="#"><span class="category">Набор для путешествий</span>
+        		<span class="product-brand">&laquo;BAXTER OF CALIFORNIA&raquo;</span></a></h2>
+
 							<span class="order-price">2 900 руб.</span>
-							<a href="#">Купить</a>
+							<a class="btn buy" href="#">Купить</a>
 						</div>
 
 					</article>
 					<article class="shop-item">
 						<div class="item-image">
-							<a href="#">
+							<a>
 								<img src="img/bayter-conditioner.jpg" width="220" height="165" alt="">
 							</a>
 						</div>
 						<div class="order-container">
-							<h2><a><span class="category">Увлажняющий кондиционер</span>
+
+							<!--Здесь я не смог убрать характеристики линк -->
+							<h2><a href="#"><span class="category">Увлажняющий кондиционер</span>
         		<span class="product-brand"></span>&laquo;BAXTER OF CALIFORNIA&raquo;</a></h2>
+
+							<!--Объясни пожалуйста как тут правильно  расставить кнопки?-->
 							<span class="order-price">
 						750 руб.
 					</span>
-							<a href="#">Купить</a>
+							<a class="btn buy" href="#">Купить</a>
 						</div>
 					</article>
 					<article class="shop-item">
@@ -131,7 +149,7 @@
 							<span class="order-price">
 						290 руб.
 					</span>
-							<a href="#">Купить</a>
+							<a class="btn buy" href="#">Купить</a>
 						</div>
 					</article>
 					<article class="shop-item">
@@ -146,7 +164,7 @@
 							<span class="order-price">
 						500 руб.
 					</span>
-							<a href="#">Купить</a>
+							<a class="btn buy" href="#">Купить</a>
 						</div>
 					</article>
 					<article class="shop-item">
@@ -161,7 +179,7 @@
 							<span class="order-price">
 						300 руб.
 					</span>
-							<a class="order-btn" href="#">Купить</a>
+							<a class="btn buy" href="#">Купить</a>
 						</div>
 					</article>
 					<article class="shop-item">
@@ -176,16 +194,16 @@
 							<span class="order-price">
 						3 900 руб.
 					</span>
-							<a class="order-btn" href="#">Купить</a>
+							<a class="btn buy" href="#">Купить</a>
 						</div>
 					</article>
 
-					<!--					<Как опустить?>-->
-					<ul class="btn-page-list">
-						<li><a class="btn" href="#">1</a></li>
-						<li><a class="btn" href="#">2</a></li>
-						<li><a class="btn" href="#">3</a></li>
-						<li><a class="btn" href="#">4</a></li>
+					<!--					<Как опустить? >-->
+					<ul class="btn-page-list clearfix">
+						<li><a class="btn btn-page" href="#">1</a></li>
+						<li><a class="btn btn-page" href="#">2</a></li>
+						<li><a class="btn btn-page" href="#">3</a></li>
+						<li><a class="btn btn-page" href="#">4</a></li>
 					</ul>
 				</section>
 			</div>
