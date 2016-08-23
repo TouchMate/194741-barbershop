@@ -13,6 +13,7 @@
 	.shop-item h2 {
 		font-size: 14px;
 		line-height: 18px;
+		margin-left: 15px;
 	}
 	
 	.shop-item h2 {
@@ -63,7 +64,7 @@
 	.shop-navigation li {
 		display: inline-block;
 		font-size: 16px;
-		line-height: 20px;
+		/*		line-height: 20px;*/
 		vertical-align: top;
 	}
 	
@@ -159,19 +160,6 @@
 		background-color: #000000;
 		transform: rotate(45deg);
 	}
-	/*
-	.breadcrumbs li:nth-child(3)::after {
-		content: "";
-		position: absolute;
-		bottom: 8px;
-		left: 123%;
-		display: block;
-		width: 7px;
-		height: 7px;
-		background-color: #000000;
-		transform: rotate(45deg);
-	}
-*/
 	
 	.breadcrumbs li:last-child {
 		color: #b0aeac;
@@ -531,9 +519,10 @@
 	
 	.btn-page-list {
 		list-style: none;
-		margin-left: 0px;
+		margin: 0px;
 		padding: 0px;
-		padding-top: 45px;
+		float: left;
+		margin-top: 26px;
 	}
 	
 	.btn-page-list li {
@@ -621,4 +610,9 @@
 		text-decoration: none;
 		color: #ffffff;
 		background-color: #000000;
+	}
+	
+	.btn-page.active {
+		background-color: #ffffff;
+		color: #000000;
 	}
